@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "2438f248-453a-4628-9bd9-195579b88f1f",
+		"name": "FLIPKART COLLECTION",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "15249884"
+	},
+	"item": [
+		{
+			"name": "flipkart-add-client",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "a",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clientid\" : 126,\r\n\t\"clientname\": \"prithvi\",\r\n\t\"emailid\" : \"prithvi17@gmail.com\",\r\n\t\"address\":\"mumbai\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/v1/user/register",
+				"description": "Flipkart"
+			},
+			"response": []
+		},
+		{
+			"name": "flipkart-add-driver",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "a",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"driverid\" : 302,\r\n\t\"name\": \"mehul\",\r\n\t\"age\" : 37,\r\n\t\"gender\":\"M\",\r\n    \"vehicleInfo\" : \"TATA:AO0182\",\r\n    \"coordinates\":[4,7]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/v1/driver/register",
+				"description": "Flipkart"
+			},
+			"response": []
+		},
+		{
+			"name": "flipkart-find-and-book-ride",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "a",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"mangesh\",\r\n\t\"source\": [18,5],\r\n\t\"destination\" : [4,5]\r\n\t\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/v1/ride/book",
+				"description": "Flipkart"
+			},
+			"response": []
+		}
+	]
+}

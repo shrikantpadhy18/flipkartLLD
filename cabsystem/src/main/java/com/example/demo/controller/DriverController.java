@@ -20,7 +20,7 @@ public class DriverController {
 	@Autowired
 	private CabRiderService cabRider;
 	
-	@PostMapping(value = "/Driver/Register",produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
+	@PostMapping(value = "/v1/driver/register",produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Response>addDriver(@RequestBody CabRider riderInfo){
 		CabRider riderResponse = cabRider.addRiderInfo(riderInfo);
 		

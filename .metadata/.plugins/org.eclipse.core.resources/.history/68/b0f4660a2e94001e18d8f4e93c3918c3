@@ -18,7 +18,7 @@ public class FindRideController {
 	@Autowired
 	private BookingService bookingService;
 	
-	@PostMapping(value = "/v1/ride/book",produces = MediaType.APPLICATION_JSON_VALUE,consumes = MediaType.APPLICATION_JSON_VALUE)
+	@PostMapping(value = "/ride/book",produces = MediaType.APPLICATION_JSON_VALUE,consumes = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Response> findAndBookRide(@RequestBody BookingData bookingData){
 		
 		try {

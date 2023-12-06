@@ -11,16 +11,22 @@ import com.example.demo.model.CabRider;
 public class RiderStore {
 
 	private Map<Integer,CabRider>driverStorage = new HashMap<>();
+	private Object lock = new Object();
 	
 	public CabRider addStore(int driverid,CabRider rider) {
-		if(driverStorage.get(driverid) == null) {
-			driverStorage.put(driverid, rider);
-			return rider;
+		
+		synchronized(lock) {
+			
+		
+			if(driverStorage.get(driverid) == null) {
+				driverStorage.put(driverid, rider);
+				return rider;
+			}
+			else {
+				return null;
+			}
+		//return
 		}
-		else {
-			return null;
-		}
-		//return 
 	}
 	
 	public Map<Integer,CabRider> getDriverStores(){

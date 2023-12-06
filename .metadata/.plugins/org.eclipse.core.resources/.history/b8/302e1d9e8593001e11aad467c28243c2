@@ -1,0 +1,10 @@
+package com.example.demo.repository;
+
+public class ClientStore {
+	private Map<Integer,Client> clientStorage;
+	public ClientStore(int id,Client client) {
+		clientStorage = new HashMap<>();
+		// TODO Auto-generated constructor stub
+	}
+
+}

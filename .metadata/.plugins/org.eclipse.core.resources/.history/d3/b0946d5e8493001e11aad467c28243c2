@@ -1,0 +1,12 @@
+package com.example.demo.model;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Client {
+
+	public Client() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

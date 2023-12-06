@@ -1,0 +1,23 @@
+package com.example.demo.repository;
+
+import java.util.Map;
+
+import org.springframework.stereotype.Repository;
+
+import java.util.HashMap;
+
+import com.example.demo.model.Client;
+
+@Repository
+public class ClientStore {
+	private Map<Integer,Client>clientStorage = new HashMap<>();
+	
+	public Client addStore(int clientId,Client client) {
+		if(clientStorage.get(clientId) == null) {
+			clientStorage.put(clientId, client);
+			return client;
+		}
+		return 
+	}
+	
+}

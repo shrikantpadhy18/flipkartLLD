@@ -1,0 +1,15 @@
+package com.example.demo.Formatters;
+
+public class Response {
+	int code;
+	String message;
+	public Response(int code, String message) {
+		// TODO Auto-generated constructor stu
+		this.code = code;
+		this.message = message;
+	}
+	public Response getResponse() {
+		return this;
+	}
+
+}

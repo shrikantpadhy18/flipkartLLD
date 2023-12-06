@@ -1,0 +1,5 @@
+rootProject.name = 'cabsystem'
+
+gradle.projectsLoaded {
+    // Configuration settings go here
+}

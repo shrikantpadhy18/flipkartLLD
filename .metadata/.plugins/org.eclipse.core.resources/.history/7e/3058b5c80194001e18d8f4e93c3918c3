@@ -1,0 +1,18 @@
+package com.example.demo.service;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.model.CabRider;
+import com.example.demo.repository.RiderStore;
+
+@Service
+public class CabRiderService {
+	
+	@Autowired
+	private RiderStore riderStore;
+	
+	public void addRiderInfo(CabRider rider) {
+		riderStore.addStore(rider.driverid, rider)
+	}
+
+}

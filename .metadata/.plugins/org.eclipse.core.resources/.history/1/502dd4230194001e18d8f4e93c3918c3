@@ -1,0 +1,23 @@
+package com.example.demo.repository;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.example.demo.model.CabRider;
+
+public class RiderStore {
+
+	private Map<Integer,CabRider>clientStorage = new HashMap<>();
+	
+	public CabRider addStore(int driverid,CabRider rider) {
+		if(clientStorage.get(driverid) == null) {
+			clientStorage.put(driverid, rider);
+			return rider;
+		}
+		else {
+			return null;
+		}
+		//return 
+	}
+
+}

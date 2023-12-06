@@ -1,0 +1,14 @@
+package com.example.demo.controller;
+
+import org.springframework.http.ResponseEntity;
+
+import com.example.demo.Formatters.Response;
+
+public class DriverController {
+
+	@RestController
+	
+	public ResponseEntity<Response>  addDriver(@RequestBody CarRider riderInfo){
+		
+	}
+}

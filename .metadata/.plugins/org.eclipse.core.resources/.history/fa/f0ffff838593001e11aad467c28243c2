@@ -1,0 +1,9 @@
+package com.example.demo.repository;
+
+public class ClientStore {
+
+	public ClientStore() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package com.example.demo.controller;
+
+/**
+ * @author SHRIKANT
+ *
+ */
+public class UserRegisterController {
+
+	/**
+	 * 
+	 */
+	public UserRegisterController() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.example.demo.controller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.Formatters.Response;
+import com.example.demo.model.CabRider;
+
+
+@RestController
+public class DriverController {
+
+	
+	public ResponseEntity<Response>  addDriver(@RequestBody CabRider riderInfo){
+		
+	}
+}

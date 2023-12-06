@@ -1,0 +1,9 @@
+package com.example.demo.model;
+
+public class BookingData {
+
+	public BookingData() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.example.demo.repository;
+
+import java.util.Map;
+import java.util.HashMap;
+
+import com.example.demo.model.Client;
+
+public class ClientStore {
+	private Map<Integer,Client>clientStorage = new HashMap<>();
+	
+	public void addStore(int clientId,Client client) {
+		clientStorage.put(clientId, client);
+	}
+	
+
+
+}

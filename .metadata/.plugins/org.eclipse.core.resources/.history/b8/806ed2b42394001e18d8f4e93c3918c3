@@ -1,0 +1,10 @@
+package com.example.demo.model;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class BookingData {
+	private String username;
+	private String source;
+	private String destiname;
+}

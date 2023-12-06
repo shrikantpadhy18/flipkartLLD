@@ -1,0 +1,15 @@
+package com.example.demo.repository;
+
+import java.util.Map;
+import java.util.HashMap;
+
+import com.example.demo.model.Client;
+
+public class ClientStore {
+	private Map<Integer,Client>clientStorage;
+	public ClientStore(int id,Client client) {
+		clientStorage = HashMap<Integer,Client>();
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.example.demo.model;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class CabRider {
+	private int driverid;
+	private String name;
+	private int age;
+	private String gender;
+	private String vehicleInfo;
+	private int numbers[2];
+	
+}

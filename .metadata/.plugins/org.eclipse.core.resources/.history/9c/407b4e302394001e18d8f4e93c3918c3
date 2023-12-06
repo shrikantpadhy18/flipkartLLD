@@ -1,0 +1,9 @@
+package com.example.demo.repository;
+
+public class BookingStore {
+
+	public BookingStore() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

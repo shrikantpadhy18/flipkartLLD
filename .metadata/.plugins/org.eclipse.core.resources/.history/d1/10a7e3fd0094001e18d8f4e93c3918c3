@@ -1,0 +1,9 @@
+package com.example.demo.repository;
+
+public class RiderStore {
+
+	public RiderStore() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

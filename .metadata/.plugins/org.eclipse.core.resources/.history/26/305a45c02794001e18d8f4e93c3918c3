@@ -1,0 +1,43 @@
+package com.example.demo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.Formatters.Response;
+import com.example.demo.model.BookingData;
+import com.example.demo.service.BookingService;
+
+@RestController
+public class FindRideController {
+	
+	@Autowired
+	private BookingService bookingService;
+	public ResponseEntity<Response> findAndBookRide(@RequestBody BookingData bookingData){
+		
+		try {
+			
+			int data = bookingService.bookService(bookingData);
+			if(data == -1) {
+				String errorMessage = "No Ride Available";
+				Response failure = new Response(HttpStatus.INTERNAL_SERVER_ERROR.value(), errorMessage);
+	            return new ResponseEntity<>(failure, HttpStatus.INTERNAL_SERVER_ERROR);
+			}
+			else
+			{
+				String successMessage = "Ride booked, Driver ID :  " + Integer.toString(data);
+				Response success = new Response(HttpStatus.OK.value(), successMessage);
+	            return new ResponseEntity<>(success, HttpStatus.OK);
+			}
+			
+		}
+		catch(Exception e) {
+			String errorMessage = "something went wrong";
+			Response failure = new Response(HttpStatus.INTERNAL_SERVER_ERROR.value(), errorMessage);
+            return new ResponseEntity<>(failure, HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+	}
+
+}

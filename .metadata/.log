@@ -1,0 +1,1470 @@
+!SESSION 2023-12-05 19:30:06.932 -----------------------------------------------
+eclipse.buildId=4.18.0.202303131455
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+This is a continuation of log file C:\Users\SHRIKANT\Documents\flipkartround\.metadata\.bak_0.log
+Created Time: 2023-12-05 23:55:22.846
+
+!ENTRY org.eclipse.ui 4 0 2023-12-05 23:55:22.846
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Comparison method violates its general contract!
+	at java.base/java.util.TimSort.mergeHi(TimSort.java:903)
+	at java.base/java.util.TimSort.mergeAt(TimSort.java:520)
+	at java.base/java.util.TimSort.mergeForceCollapse(TimSort.java:461)
+	at java.base/java.util.TimSort.sort(TimSort.java:254)
+	at java.base/java.util.Arrays.sort(Arrays.java:1233)
+	at org.eclipse.jface.viewers.ViewerComparator.sort(ViewerComparator.java:206)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getSortedChildren(AbstractTreeViewer.java:661)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:839)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(TreeViewer.java:611)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:790)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalExpand(AbstractTreeViewer.java:1701)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.expandToLevel(AbstractTreeViewer.java:1142)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.expandToLevel(AbstractTreeViewer.java:1116)
+	at org.eclipse.buildship.ui.internal.view.execution.ExecutionPage.refreshChangedItems(ExecutionPage.java:231)
+	at org.eclipse.buildship.ui.internal.view.execution.UpdateExecutionPageJob$UpdateExecutionPageContent.run(UpdateExecutionPageJob.java:91)
+	at org.eclipse.ui.internal.PendingSyncExec.run(PendingSyncExec.java:68)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:172)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jface 4 0 2023-12-05 23:55:22.944
+!MESSAGE java.lang.IllegalArgumentException: Comparison method violates its general contract!
+Workaround for comparator violation:
+	Set system property -Djava.util.Arrays.useLegacyMergeSort=true
+this: org.eclipse.buildship.ui.internal.view.execution.ExecutionPageSorter
+comparator: java.text.RuleBasedCollator
+array:
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@25d9d134
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6d35cd41
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@430228a4
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@28391181
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6ba59e02
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@456ed442
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@17fb8343
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@772e2d24
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@303cf84d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@343f6cc
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@48699c7c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4e28df58
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1901b840
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@568c83a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1e63e97
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@93cf3ec
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1d6b8933
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5e01abbc
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6e23246d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6e09d6
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@418d3af9
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1202353f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@65f57b5e
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@15a5fe8f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3d574430
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3eff2568
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@709e8662
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4a755f78
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4d84f4c2
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@a974c7f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@ebe66d9
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6e5076e9
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@418bd05
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@34dcfd4d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@49a9dda1
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@24a31d43
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@65927c47
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3677c32d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@31b45497
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@dc10ee7
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7bc72b5c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7321f1a2
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@602203bd
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@65118f68
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@274ec55d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5b9e8cf7
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2bd153d2
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@42d2f30f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@13e7b225
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3cb17d9a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1d5fe61d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@48c02432
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6698d195
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@51f23d71
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@337f465c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7a5715b5
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5a636713
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1a3ad09b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@53be2826
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@11066559
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@509cc395
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1c6e6f15
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3e339ba6
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1c3d1d94
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2a8bf5ed
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4572216e
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@673e7ccd
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@131b1c03
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@664ab710
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@326783e6
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@262b5973
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6d9ba2b1
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5eda6a25
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@502cbaab
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2cb0911c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1c8e3011
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1108eae7
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@24c4e38f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@c54be7a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@61b70959
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@373e985a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3465dda9
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1d6b0231
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@44cf3d04
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7f0818f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1de28c4d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@58dd7f4a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@65c74e48
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@66384786
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6fb12fe8
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5c252a7b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3cf8ab9
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@276fe931
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@41474c5b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@34c4d0fa
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4ba10e99
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@13df50bd
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6801f309
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7a50bdf3
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3946a1e6
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@507554cb
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@378b6c77
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@48cbe050
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@440e313e
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3ea7f678
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@52a3dd0f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@457d7e6b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@704f303b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@71da0c7c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3dddeced
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@13fd431b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1aba77b7
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3ba22170
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@69ca086d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@10567bd4
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5998b1a6
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@739ba244
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4a2b453a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@69001f70
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@75099677
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5b2e8310
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4b3c1fda
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@222e7252
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1b2df24e
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3434c438
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1f5dcfab
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4e3082f0
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3afbb6fa
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@287ca099
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@592d02aa
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@13c03c7d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@746b1499
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@395e1ae5
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@8d76736
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1ae69185
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3685819c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7f452c9b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4c180a92
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@625cd02d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@784f349b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2eb8fefd
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@22782d22
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@26215cf8
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@274b5f4b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4eed1249
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2d9f378b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@175685c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7c39de3e
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5a60e4aa
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@e97b302
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@240a0d04
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@16f0ff95
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2f59216
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@51c33ce2
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6d558c60
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4b681c55
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@78d4b999
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@c42e9aa
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1d5fb3e0
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@16de8eaa
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4b9be599
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@508f5af9
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@30af23bb
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@52e640da
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@46c5d032
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6cb70281
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@25cc5657
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@454c22a4
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2de02e7f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@79179248
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3e2e1dd3
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1a5351b0
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@366c0753
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@73ac5604
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3da21d27
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3d7c05f2
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6b7cdb91
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7a71ac8c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5797ddc0
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@a991155
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@734e3c4
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@70563a62
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@19c69075
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5b1729a1
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7b9dcbc4
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3ad97bff
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@173101e9
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7589688f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@605f4e11
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@11a8c766
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@e89a2f3
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@307a6ebd
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2acf9165
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7d8bf0ad
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3ed64bd5
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5dbac534
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@ba8335f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2904a41f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2500da09
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2e1828f8
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6460c4af
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@68c8a060
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4b3befe2
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@240b5195
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@46acac07
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6b4adf12
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7f9a7966
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@16308f9
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@220c5046
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1f03b95a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@33fea295
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2ac350d3
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6a8dabad
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@684606cf
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2eeaeb58
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1e1f639e
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@19c86333
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@41e07ebb
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3829fdf4
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5d4f7afc
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7444b9d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4593f868
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@32a27b73
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@149c7f41
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@31a1d6ec
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6bab2808
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4af3afed
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3de2a785
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@24b1063
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3012934a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@67c9ce62
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4fbf8391
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@152d4a0d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@31810321
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@189261ad
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2b82da25
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5480807a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6d2119c0
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@66b582c0
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5bdb2fc1
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@b08f790
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6e820028
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@24eb2cba
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@26ccbac1
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6a347dff
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@14c9b3d1
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@69bac30e
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2ae3764a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@63f13d6c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3aff5df8
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5624b1a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@34823cda
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5e726d7b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1ea2ebd0
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@98f5985
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2c4ec082
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@619a69c5
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@68efe24d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1b5fdda4
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@414f549d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@73a9d930
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6443b082
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@194e353
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3ac4a440
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7199a71
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7e27edb0
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@588f175c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@47765ea9
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@cf78e24
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4dfca867
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6de96373
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@189ffb71
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@28a9c0e8
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@beea0a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@266af395
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4149d05a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2781e61b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5018a65b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@211f1196
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2e5bdeef
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6424401
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@137d10ec
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4a3720b4
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3aeb33bb
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2e9d0aab
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@559c95e4
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@26dd2d63
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4548b4e8
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3c636b8
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3244a091
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7d3d258f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7d522134
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@53479d0c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4f93abd0
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@58c4da9b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4cc18d51
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@20764e7c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@72e9ac89
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@c07b04d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4c6c0f99
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5efbadc6
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6149df74
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@507d9ec8
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7c414399
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7fd7444a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@50ca86bb
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6cfdc9b4
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1ad61239
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5fe6f03d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5b9d4a24
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@59af988a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@73421e5c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1bcd6f11
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2ab0da26
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@f7e7c32
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6cad237f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1ce86c1c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3025e44d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4cc68197
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@49f5f5ab
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1622f805
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@9ba7100
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@71889399
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@173668ae
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@16d5489d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4cbd1936
+
+!ENTRY org.eclipse.ui 4 0 2023-12-05 23:55:22.946
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Comparison method violates its general contract!
+	at java.base/java.util.TimSort.mergeHi(TimSort.java:903)
+	at java.base/java.util.TimSort.mergeAt(TimSort.java:520)
+	at java.base/java.util.TimSort.mergeForceCollapse(TimSort.java:461)
+	at java.base/java.util.TimSort.sort(TimSort.java:254)
+	at java.base/java.util.Arrays.sort(Arrays.java:1233)
+	at org.eclipse.jface.viewers.ViewerComparator.sort(ViewerComparator.java:206)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getSortedChildren(AbstractTreeViewer.java:661)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:839)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(TreeViewer.java:611)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:790)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalExpand(AbstractTreeViewer.java:1701)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.expandToLevel(AbstractTreeViewer.java:1142)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.expandToLevel(AbstractTreeViewer.java:1116)
+	at org.eclipse.buildship.ui.internal.view.execution.ExecutionPage.refreshChangedItems(ExecutionPage.java:231)
+	at org.eclipse.buildship.ui.internal.view.execution.UpdateExecutionPageJob$UpdateExecutionPageContent.run(UpdateExecutionPageJob.java:91)
+	at org.eclipse.ui.internal.PendingSyncExec.run(PendingSyncExec.java:68)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:172)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.buildship.core 2 2 2023-12-05 23:55:22.993
+!MESSAGE Launching Gradle tasks failed due to an error in the referenced Gradle build.
+!STACK 0
+org.gradle.tooling.BuildException: Could not execute build using connection to Gradle distribution 'https://services.gradle.org/distributions/gradle-8.5-bin.zip'.
+	at org.gradle.tooling.internal.consumer.ExceptionTransformer.transform(ExceptionTransformer.java:51)
+	at org.gradle.tooling.internal.consumer.ExceptionTransformer.transform(ExceptionTransformer.java:29)
+	at org.gradle.tooling.internal.consumer.ResultHandlerAdapter.onFailure(ResultHandlerAdapter.java:43)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1$1.run(DefaultAsyncConsumerActionExecutor.java:69)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	at org.gradle.tooling.internal.consumer.BlockingResultHandler.getResult(BlockingResultHandler.java:46)
+	at org.gradle.tooling.internal.consumer.DefaultBuildLauncher.run(DefaultBuildLauncher.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.buildship.core.internal.workspace.ConnectionAwareLauncherProxy.invokeRun(ConnectionAwareLauncherProxy.java:102)
+	at org.eclipse.buildship.core.internal.workspace.ConnectionAwareLauncherProxy.invoke(ConnectionAwareLauncherProxy.java:92)
+	at jdk.proxy16/jdk.proxy16.$Proxy117.run(Unknown Source)
+	at org.eclipse.buildship.core.internal.launch.RunGradleBuildLaunchRequestJob.executeLaunch(RunGradleBuildLaunchRequestJob.java:71)
+	at org.eclipse.buildship.core.internal.launch.RunGradleBuildLaunchRequestJob.executeLaunch(RunGradleBuildLaunchRequestJob.java:40)
+	at org.eclipse.buildship.core.internal.launch.BaseLaunchRequestJob.executeLaunch(BaseLaunchRequestJob.java:66)
+	at org.eclipse.buildship.core.internal.launch.BaseLaunchRequestJob.runInToolingApi(BaseLaunchRequestJob.java:42)
+	at org.eclipse.buildship.core.internal.launch.BaseLaunchRequestJob.runInToolingApi(BaseLaunchRequestJob.java:34)
+	at org.eclipse.buildship.core.internal.operation.ToolingApiJob$1.runInToolingApi(ToolingApiJob.java:54)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.operation.ToolingApiJob.run(ToolingApiJob.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.gradle.internal.exceptions.LocationAwareException: Execution failed for task ':test'.
+	at org.gradle.initialization.exception.DefaultExceptionAnalyser.transform(DefaultExceptionAnalyser.java:93)
+	at org.gradle.initialization.exception.DefaultExceptionAnalyser.collectFailures(DefaultExceptionAnalyser.java:59)
+	at org.gradle.initialization.exception.MultipleBuildFailuresExceptionAnalyser.transform(MultipleBuildFailuresExceptionAnalyser.java:55)
+	at org.gradle.initialization.exception.StackTraceSanitizingExceptionAnalyser.transform(StackTraceSanitizingExceptionAnalyser.java:39)
+	at org.gradle.internal.buildtree.DefaultBuildTreeFinishExecutor.finishBuildTree(DefaultBuildTreeFinishExecutor.java:56)
+	at org.gradle.composite.internal.OperationFiringBuildTreeFinishExecutor$1.call(OperationFiringBuildTreeFinishExecutor.java:46)
+	at org.gradle.composite.internal.OperationFiringBuildTreeFinishExecutor$1.call(OperationFiringBuildTreeFinishExecutor.java:42)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.composite.internal.OperationFiringBuildTreeFinishExecutor.finishBuildTree(OperationFiringBuildTreeFinishExecutor.java:42)
+	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.lambda$runBuild$4(DefaultBuildTreeLifecycleController.java:124)
+	at org.gradle.internal.model.StateTransitionController.lambda$transition$6(StateTransitionController.java:169)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.lambda$transition$7(StateTransitionController.java:169)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:44)
+	at org.gradle.internal.model.StateTransitionController.transition(StateTransitionController.java:169)
+	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.runBuild(DefaultBuildTreeLifecycleController.java:116)
+	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.scheduleAndRunTasks(DefaultBuildTreeLifecycleController.java:76)
+	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.scheduleAndRunTasks(DefaultBuildTreeLifecycleController.java:71)
+	at org.gradle.tooling.internal.provider.runner.BuildModelActionRunner.run(BuildModelActionRunner.java:53)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.internal.buildtree.ProblemReportingBuildActionRunner.run(ProblemReportingBuildActionRunner.java:49)
+	at org.gradle.launcher.exec.BuildOutcomeReportingBuildActionRunner.run(BuildOutcomeReportingBuildActionRunner.java:65)
+	at org.gradle.tooling.internal.provider.FileSystemWatchingBuildActionRunner.run(FileSystemWatchingBuildActionRunner.java:140)
+	at org.gradle.launcher.exec.BuildCompletionNotifyingBuildActionRunner.run(BuildCompletionNotifyingBuildActionRunner.java:41)
+	at org.gradle.launcher.exec.RootBuildLifecycleBuildActionExecutor.lambda$execute$0(RootBuildLifecycleBuildActionExecutor.java:40)
+	at org.gradle.composite.internal.DefaultRootBuildState.run(DefaultRootBuildState.java:123)
+	at org.gradle.launcher.exec.RootBuildLifecycleBuildActionExecutor.execute(RootBuildLifecycleBuildActionExecutor.java:40)
+	at org.gradle.internal.buildtree.InitDeprecationLoggingActionExecutor.execute(InitDeprecationLoggingActionExecutor.java:62)
+	at org.gradle.internal.buildtree.InitProblems.execute(InitProblems.java:38)
+	at org.gradle.internal.buildtree.DefaultBuildTreeContext.execute(DefaultBuildTreeContext.java:40)
+	at org.gradle.launcher.exec.BuildTreeLifecycleBuildActionExecutor.lambda$execute$0(BuildTreeLifecycleBuildActionExecutor.java:58)
+	at org.gradle.internal.buildtree.BuildTreeState.run(BuildTreeState.java:58)
+	at org.gradle.launcher.exec.BuildTreeLifecycleBuildActionExecutor.execute(BuildTreeLifecycleBuildActionExecutor.java:58)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionExecutor$3.call(RunAsBuildOperationBuildActionExecutor.java:61)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionExecutor$3.call(RunAsBuildOperationBuildActionExecutor.java:57)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionExecutor.execute(RunAsBuildOperationBuildActionExecutor.java:57)
+	at org.gradle.launcher.exec.RunAsWorkerThreadBuildActionExecutor.lambda$execute$0(RunAsWorkerThreadBuildActionExecutor.java:36)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:264)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:128)
+	at org.gradle.launcher.exec.RunAsWorkerThreadBuildActionExecutor.execute(RunAsWorkerThreadBuildActionExecutor.java:36)
+	at org.gradle.tooling.internal.provider.continuous.ContinuousBuildActionExecutor.execute(ContinuousBuildActionExecutor.java:110)
+	at org.gradle.tooling.internal.provider.SubscribableBuildActionExecutor.execute(SubscribableBuildActionExecutor.java:64)
+	at org.gradle.internal.session.DefaultBuildSessionContext.execute(DefaultBuildSessionContext.java:46)
+	at org.gradle.tooling.internal.provider.BuildSessionLifecycleBuildActionExecuter$ActionImpl.apply(BuildSessionLifecycleBuildActionExecuter.java:92)
+	at org.gradle.tooling.internal.provider.BuildSessionLifecycleBuildActionExecuter$ActionImpl.apply(BuildSessionLifecycleBuildActionExecuter.java:80)
+	at org.gradle.internal.session.BuildSessionState.run(BuildSessionState.java:69)
+	at org.gradle.tooling.internal.provider.BuildSessionLifecycleBuildActionExecuter.execute(BuildSessionLifecycleBuildActionExecuter.java:62)
+	at org.gradle.tooling.internal.provider.BuildSessionLifecycleBuildActionExecuter.execute(BuildSessionLifecycleBuildActionExecuter.java:41)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:64)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:32)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:51)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:39)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:47)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:31)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:65)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:39)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:29)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:35)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.create(ForwardClientInput.java:78)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.create(ForwardClientInput.java:75)
+	at org.gradle.util.internal.Swapper.swap(Swapper.java:38)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:75)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.LogAndCheckHealth.execute(LogAndCheckHealth.java:64)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:63)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:84)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:52)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:297)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+Caused by: org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':test'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:148)
+	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:282)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:146)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:134)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:80)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:463)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:380)
+	... 2 more
+Caused by: org.gradle.api.internal.exceptions.MarkedVerificationException: There were failing tests. See the report at: file:///C:/Users/SHRIKANT/Documents/flipkartround/cabsystem/build/reports/tests/test/index.html
+	at org.gradle.api.tasks.testing.AbstractTestTask.handleTestFailures(AbstractTestTask.java:687)
+	at org.gradle.api.tasks.testing.AbstractTestTask.handleCollectedResults(AbstractTestTask.java:533)
+	at org.gradle.api.tasks.testing.AbstractTestTask.executeTests(AbstractTestTask.java:528)
+	at org.gradle.api.tasks.testing.Test.executeTests(Test.java:715)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:125)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.doExecute(StandardTaskAction.java:58)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:51)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:29)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:248)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:47)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:68)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:233)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:216)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:199)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:166)
+	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
+	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:67)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:37)
+	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:41)
+	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:74)
+	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+	at org.gradle.internal.execution.steps.CreateOutputsStep.execute(CreateOutputsStep.java:50)
+	at org.gradle.internal.execution.steps.CreateOutputsStep.execute(CreateOutputsStep.java:28)
+	at org.gradle.internal.execution.steps.CaptureStateAfterExecutionStep.executeDelegateBroadcastingChanges(CaptureStateAfterExecutionStep.java:100)
+	at org.gradle.internal.execution.steps.CaptureStateAfterExecutionStep.execute(CaptureStateAfterExecutionStep.java:72)
+	at org.gradle.internal.execution.steps.CaptureStateAfterExecutionStep.execute(CaptureStateAfterExecutionStep.java:50)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:40)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:29)
+	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:179)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$1(BuildCacheStep.java:70)
+	at org.gradle.internal.Either$Right.fold(Either.java:175)
+	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:59)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:68)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:46)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:25)
+	at org.gradle.internal.execution.steps.RecordOutputsStep.execute(RecordOutputsStep.java:36)
+	at org.gradle.internal.execution.steps.RecordOutputsStep.execute(RecordOutputsStep.java:22)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:91)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:55)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:55)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:37)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:65)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
+	at org.gradle.internal.execution.steps.ResolveCachingStateStep.execute(ResolveCachingStateStep.java:76)
+	at org.gradle.internal.execution.steps.ResolveCachingStateStep.execute(ResolveCachingStateStep.java:37)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:108)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:55)
+	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.execute(CaptureStateBeforeExecutionStep.java:71)
+	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.execute(CaptureStateBeforeExecutionStep.java:45)
+	at org.gradle.internal.execution.steps.SkipEmptyWorkStep.executeWithNonEmptySources(SkipEmptyWorkStep.java:177)
+	at org.gradle.internal.execution.steps.SkipEmptyWorkStep.execute(SkipEmptyWorkStep.java:86)
+	at org.gradle.internal.execution.steps.SkipEmptyWorkStep.execute(SkipEmptyWorkStep.java:53)
+	at org.gradle.internal.execution.steps.RemoveUntrackedExecutionStateStep.execute(RemoveUntrackedExecutionStateStep.java:32)
+	at org.gradle.internal.execution.steps.RemoveUntrackedExecutionStateStep.execute(RemoveUntrackedExecutionStateStep.java:21)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+	at org.gradle.internal.execution.steps.CleanupStaleOutputsStep.execute(CleanupStaleOutputsStep.java:75)
+	at org.gradle.internal.execution.steps.CleanupStaleOutputsStep.execute(CleanupStaleOutputsStep.java:41)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:66)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:66)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:38)
+	at org.gradle.internal.execution.steps.AssignWorkspaceStep.lambda$execute$0(AssignWorkspaceStep.java:32)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:293)
+	at org.gradle.internal.execution.steps.AssignWorkspaceStep.execute(AssignWorkspaceStep.java:30)
+	at org.gradle.internal.execution.steps.AssignWorkspaceStep.execute(AssignWorkspaceStep.java:21)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:37)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:27)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:47)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:34)
+	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:64)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:145)
+	... 29 more
+
+!ENTRY org.eclipse.jface 4 0 2023-12-05 23:55:23.041
+!MESSAGE java.lang.IllegalArgumentException: Comparison method violates its general contract!
+Workaround for comparator violation:
+	Set system property -Djava.util.Arrays.useLegacyMergeSort=true
+this: org.eclipse.buildship.ui.internal.view.execution.ExecutionPageSorter
+comparator: java.text.RuleBasedCollator
+array:
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@25d9d134
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6d35cd41
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@430228a4
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@28391181
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6ba59e02
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@456ed442
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@17fb8343
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@772e2d24
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@303cf84d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@343f6cc
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@48699c7c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4e28df58
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1901b840
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@568c83a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1e63e97
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@93cf3ec
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1d6b8933
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5e01abbc
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6e23246d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6e09d6
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@418d3af9
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1202353f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@65f57b5e
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@15a5fe8f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3d574430
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3eff2568
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@709e8662
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4a755f78
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4d84f4c2
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@a974c7f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@ebe66d9
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6e5076e9
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@418bd05
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@34dcfd4d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@49a9dda1
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@24a31d43
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@65927c47
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3677c32d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@31b45497
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@dc10ee7
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7bc72b5c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7321f1a2
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@602203bd
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@65118f68
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@274ec55d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5b9e8cf7
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2bd153d2
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@42d2f30f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@13e7b225
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3cb17d9a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1d5fe61d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@48c02432
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6698d195
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@51f23d71
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@337f465c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7a5715b5
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5a636713
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1a3ad09b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@53be2826
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@11066559
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@509cc395
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1c6e6f15
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3e339ba6
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1c3d1d94
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2a8bf5ed
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4572216e
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@673e7ccd
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@131b1c03
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@664ab710
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@326783e6
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@262b5973
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6d9ba2b1
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5eda6a25
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@502cbaab
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2cb0911c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1c8e3011
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1108eae7
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@24c4e38f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@c54be7a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@61b70959
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@373e985a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3465dda9
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1d6b0231
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@44cf3d04
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7f0818f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1de28c4d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@58dd7f4a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@65c74e48
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@66384786
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6fb12fe8
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5c252a7b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3cf8ab9
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@276fe931
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@41474c5b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@34c4d0fa
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4ba10e99
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@13df50bd
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6801f309
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7a50bdf3
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3946a1e6
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@507554cb
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@378b6c77
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@48cbe050
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@440e313e
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3ea7f678
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@52a3dd0f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@457d7e6b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@704f303b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@71da0c7c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3dddeced
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@13fd431b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1aba77b7
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3ba22170
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@69ca086d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@10567bd4
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5998b1a6
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@739ba244
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4a2b453a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@69001f70
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@75099677
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5b2e8310
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4b3c1fda
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@222e7252
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1b2df24e
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3434c438
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1f5dcfab
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4e3082f0
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3afbb6fa
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@287ca099
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@592d02aa
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@13c03c7d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@746b1499
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@395e1ae5
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@8d76736
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1ae69185
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3685819c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7f452c9b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4c180a92
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@625cd02d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@784f349b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2eb8fefd
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@22782d22
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@26215cf8
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@274b5f4b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4eed1249
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2d9f378b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@175685c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7c39de3e
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5a60e4aa
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@e97b302
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@240a0d04
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@16f0ff95
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2f59216
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@51c33ce2
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6d558c60
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4b681c55
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@78d4b999
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@c42e9aa
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1d5fb3e0
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@16de8eaa
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4b9be599
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@508f5af9
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@30af23bb
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@52e640da
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@46c5d032
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6cb70281
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@25cc5657
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@454c22a4
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2de02e7f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@79179248
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3e2e1dd3
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1a5351b0
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@366c0753
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@73ac5604
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3da21d27
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3d7c05f2
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6b7cdb91
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7a71ac8c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5797ddc0
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@a991155
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@734e3c4
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@70563a62
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@19c69075
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5b1729a1
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7b9dcbc4
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3ad97bff
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@173101e9
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7589688f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@605f4e11
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@11a8c766
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@e89a2f3
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@307a6ebd
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2acf9165
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7d8bf0ad
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3ed64bd5
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5dbac534
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@ba8335f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2904a41f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2500da09
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2e1828f8
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6460c4af
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@68c8a060
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4b3befe2
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@240b5195
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@46acac07
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6b4adf12
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7f9a7966
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@16308f9
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@220c5046
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1f03b95a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@33fea295
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2ac350d3
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6a8dabad
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@684606cf
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2eeaeb58
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1e1f639e
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@19c86333
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@41e07ebb
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3829fdf4
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5d4f7afc
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7444b9d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4593f868
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@32a27b73
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@149c7f41
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@31a1d6ec
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6bab2808
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4af3afed
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3de2a785
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@24b1063
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3012934a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@67c9ce62
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4fbf8391
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@152d4a0d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@31810321
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@189261ad
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2b82da25
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5480807a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6d2119c0
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@66b582c0
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5bdb2fc1
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@b08f790
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6e820028
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@24eb2cba
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@26ccbac1
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6a347dff
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@14c9b3d1
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@69bac30e
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2ae3764a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@63f13d6c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3aff5df8
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5624b1a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@34823cda
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5e726d7b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1ea2ebd0
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@98f5985
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2c4ec082
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@619a69c5
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@68efe24d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1b5fdda4
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@414f549d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@73a9d930
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6443b082
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@194e353
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3ac4a440
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7199a71
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7e27edb0
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@588f175c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@47765ea9
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@cf78e24
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4dfca867
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6de96373
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@189ffb71
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@28a9c0e8
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@beea0a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@266af395
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4149d05a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2781e61b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5018a65b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@211f1196
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2e5bdeef
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6424401
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@137d10ec
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4a3720b4
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3aeb33bb
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2e9d0aab
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@559c95e4
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@26dd2d63
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4548b4e8
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3c636b8
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3244a091
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7d3d258f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7d522134
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@53479d0c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4f93abd0
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@58c4da9b
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4cc18d51
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@20764e7c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@72e9ac89
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@c07b04d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4c6c0f99
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5efbadc6
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6149df74
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@507d9ec8
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7c414399
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@7fd7444a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@50ca86bb
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6cfdc9b4
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1ad61239
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5fe6f03d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@5b9d4a24
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@59af988a
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@73421e5c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1bcd6f11
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@2ab0da26
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@f7e7c32
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@6cad237f
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1ce86c1c
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@3025e44d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4cc68197
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@49f5f5ab
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@1622f805
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@9ba7100
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@71889399
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@173668ae
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@16d5489d
+	org.eclipse.buildship.ui.internal.view.execution.OperationItem@4cbd1936
+
+!ENTRY org.eclipse.ui 4 0 2023-12-05 23:55:23.043
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Comparison method violates its general contract!
+	at java.base/java.util.TimSort.mergeHi(TimSort.java:903)
+	at java.base/java.util.TimSort.mergeAt(TimSort.java:520)
+	at java.base/java.util.TimSort.mergeForceCollapse(TimSort.java:461)
+	at java.base/java.util.TimSort.sort(TimSort.java:254)
+	at java.base/java.util.Arrays.sort(Arrays.java:1233)
+	at org.eclipse.jface.viewers.ViewerComparator.sort(ViewerComparator.java:206)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getSortedChildren(AbstractTreeViewer.java:661)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:839)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(TreeViewer.java:611)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:790)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalExpand(AbstractTreeViewer.java:1701)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.expandToLevel(AbstractTreeViewer.java:1142)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.expandToLevel(AbstractTreeViewer.java:1116)
+	at org.eclipse.buildship.ui.internal.view.execution.ExecutionPage.refreshChangedItems(ExecutionPage.java:231)
+	at org.eclipse.buildship.ui.internal.view.execution.UpdateExecutionPageJob$UpdateExecutionPageContent.run(UpdateExecutionPageJob.java:91)
+	at org.eclipse.ui.internal.PendingSyncExec.run(PendingSyncExec.java:68)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:172)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.core.resources 2 2 2023-12-05 23:56:36.124
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2023-12-05 23:56:36.124
+!MESSAGE The project description file (.project) for 'cabsystem' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-05 23:58:26.923
+!MESSAGE executing callback sts4.classpath.OUHZPwfD FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-12-05 23:58:26.924
+!MESSAGE No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-05 23:58:26.927
+!MESSAGE executing callback sts4.classpath.OUHZPwfD FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-12-05 23:58:26.927
+!MESSAGE No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-05 23:58:29.171
+!MESSAGE executing callback sts4.classpath.OUHZPwfD FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-12-05 23:58:29.172
+!MESSAGE No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-05 23:58:54.909
+!MESSAGE executing callback sts4.classpath.OUHZPwfD FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-12-05 23:58:54.912
+!MESSAGE No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 2 2 2023-12-06 00:08:36.990
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2023-12-06 00:08:36.990
+!MESSAGE The project description file (.project) for 'cabsystem' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-06 00:12:00.550
+!MESSAGE executing callback sts4.classpath.OUHZPwfD FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-12-06 00:12:00.552
+!MESSAGE No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-06 00:12:00.554
+!MESSAGE executing callback sts4.classpath.OUHZPwfD FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-12-06 00:12:00.555
+!MESSAGE No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-06 00:12:05.750
+!MESSAGE executing callback sts4.classpath.OUHZPwfD FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-12-06 00:12:05.750
+!MESSAGE No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-06 00:13:34.830
+!MESSAGE executing callback sts4.classpath.OUHZPwfD FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-12-06 00:13:34.834
+!MESSAGE No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-06 00:13:34.843
+!MESSAGE executing callback sts4.classpath.OUHZPwfD FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-12-06 00:13:34.844
+!MESSAGE No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-06 00:17:09.456
+!MESSAGE executing callback sts4.classpath.OUHZPwfD FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-12-06 00:17:09.459
+!MESSAGE No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.buildship.core 4 0 2023-12-06 00:33:44.632
+!MESSAGE Unresolved dependency: org.springdoc:springdoc-openapi-ui:2.3.0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-06 00:33:45.011
+!MESSAGE executing callback sts4.classpath.OUHZPwfD FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-12-06 00:33:45.012
+!MESSAGE No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-06 00:45:37.090
+!MESSAGE executing callback sts4.classpath.OUHZPwfD FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-12-06 00:45:37.108
+!MESSAGE No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-12-06 00:49:37.203
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-12-06 00:58:45.588
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-12-06 01:04:50.662
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-12-06 01:17:21.811
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-06 01:24:48.134
+!MESSAGE executing callback sts4.classpath.OUHZPwfD FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-12-06 01:24:48.143
+!MESSAGE No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-06 01:24:53.447
+!MESSAGE executing callback sts4.classpath.hfTSgmjw FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-12-06 01:24:53.450
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-06 01:30:19.528
+!MESSAGE executing callback sts4.classpath.OUHZPwfD FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-12-06 01:30:19.537
+!MESSAGE No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-06 01:30:49.874
+!MESSAGE executing callback sts4.classpath.OUHZPwfD FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-12-06 01:30:49.940
+!MESSAGE No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.OUHZPwfD'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-12-06 01:31:42.960
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2023-12-06 11:26:30.259 -----------------------------------------------
+eclipse.buildId=4.18.0.202303131455
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2023-12-06 11:26:33.180
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-12-06 11:26:40.345
+!MESSAGE Logback config file: C:\Users\SHRIKANT\Documents\flipkartround\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-12-06 11:26:54.373
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-12-06 11:26:54.373
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-12-06 11:26:54.374
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-12-06 11:27:01.267
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SHRIKANT'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-12-06 11:55:21.407
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-12-06 12:26:51.121
+!MESSAGE Problems occurred refreshing the selected resources.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2023-12-06 12:26:51.122
+!MESSAGE The project description file (.project) for 'cabsystem' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'cabsystem' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.Project.updateDescription(Project.java:1384)
+	at org.eclipse.core.internal.resources.File.updateMetadataFiles(File.java:379)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:291)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:119)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:978)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:961)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1573)
+	at org.eclipse.ui.actions.RefreshAction.refreshResource(RefreshAction.java:274)
+	at org.eclipse.ui.actions.RefreshAction$2.execute(RefreshAction.java:234)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jdt.ui.actions.RefreshAction$WrappedWorkbenchRefreshAction.run(RefreshAction.java:112)
+	at org.eclipse.jdt.ui.actions.RefreshAction.performRefresh(RefreshAction.java:178)
+	at org.eclipse.jdt.ui.actions.RefreshAction.lambda$0(RefreshAction.java:169)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:41)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5955)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:108)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter$1.run(WorkbenchRunnableAdapter.java:121)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 2 2 2023-12-06 12:29:32.695
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2023-12-06 12:29:32.695
+!MESSAGE The project description file (.project) for 'cabsystem' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-12-06 16:36:59.948
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)

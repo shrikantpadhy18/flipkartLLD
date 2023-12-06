@@ -1,0 +1,9 @@
+package com.example.demo.service;
+
+public class CabRiderService {
+
+	public CabRiderService() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.example.demo.Formatters;
+
+public class Response {
+
+	public Response() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

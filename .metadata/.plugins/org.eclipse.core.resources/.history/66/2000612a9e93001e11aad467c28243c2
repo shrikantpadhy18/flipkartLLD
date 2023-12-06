@@ -1,0 +1,39 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.2.0'
+	id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '17'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	 implementation 'org.springframework.boot:spring-boot-starter-web'
+	 implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.1'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.1' // Optional, for handling Java 8 Date/Time types
+    // Add any other Jackson modules or dependencies you need
+ 	implementation 'io.springfox:springfox-swagger2:3.0.0'
+	implementation 'io.springfox:springfox-swagger-ui:3.0.0'
+	implementation 'io.springfox:springfox-swagger-ui:3.0.0'
+	//implementation group: 'org.springframework.boot', artifact: 'spring-boot-starter-validation', version: '<spring-boot-version>'
+	implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webmvc-ui', version: '2.3.0'
+	
+	implementation 'javax.servlet:javax.servlet-api:4.0.1' // Use the latest version
+
+    
+}
+
+
+//tasks.named('test') {
+//	useJUnitPlatform()
+//}
